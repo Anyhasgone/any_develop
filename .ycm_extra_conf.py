@@ -53,10 +53,10 @@ flags = [
 '-Wno-weak-vtables',
 '-x', 
 'c++', 
-'-I', 
-'.', 
 '-isystem', 
 '/usr/include/',
+'-I',
+'/home/fenghualiang/project/vod_sdk/3rd/inc/', 
 ]
 
 

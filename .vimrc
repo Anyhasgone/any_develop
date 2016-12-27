@@ -121,7 +121,7 @@ colorscheme jellybeans
 " >>
 " 营造专注气氛
 
-" 禁止光标闪烁
+" 禁止光标闪烁e
 set gcr=a:block-blinkon0
 
 " 禁止显示滚动条
@@ -274,9 +274,10 @@ let tagbar_left=1
 " 设置显示／隐藏标签列表子窗口的快捷键。速记：identifier list by tag
 nnoremap <Leader>ilt :TagbarToggle<CR>
 " 设置标签子窗口的宽度
-let tagbar_width=32
+let tagbar_width=35
 " tagbar 子窗口中不显示冗余帮助信息
 let g:tagbar_compact=1
+let g:tagbar_autofocus = 1
 " 设置 ctags 对哪些代码标识符生成标签
 let g:tagbar_type_cpp = {
      \ 'ctagstype' : 'c++',
@@ -426,8 +427,7 @@ let g:clang_snippets=1
 let g:clang_conceal_snippets=1
 let g:clang_snippets_engine='clang_complete'
 
-" Complete options (disable preview scratch window, longest removed to aways
-" show menu)
+" Complete options (disable preview scratch window, longest removed to aways " show menu)
 set completeopt=menu,menuone
 
 " Limit popup menu height
@@ -493,9 +493,7 @@ map <Leader>bl :MBEToggle<cr>
 " buffer 切换快捷键
 map <C-Tab> :MBEbn<cr>
 map <C-S-Tab> :MBEbp<cr>
-
 " <<
-
 
 " >>
 " 环境恢复
@@ -534,5 +532,4 @@ let g:wildfire_objects = ["i'", 'i"', "i)", "i]", "i}", "i>", "ip"]
 " <<
 
 " 调用 gundo 树
-nnoremap <Leader>ud :GundoToggle<CR>
-
+nnoremap <Leader>ud :GundoToggle<CR> 
